@@ -2,7 +2,7 @@
 
 int main(){
     struct sockaddr_in sockaddress;
-    if(fillAddress(sockaddress,"127.0.0.1",6767) == 1){
+    if(fillAddress(sockaddress,"140.238.240.25",6767) == 1){
         return 1;
     }
     int sockfd = socket(AF_INET, SOCK_STREAM, 0);

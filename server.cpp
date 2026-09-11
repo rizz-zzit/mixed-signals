@@ -8,7 +8,7 @@ int main(){
         return 1;
     }
     struct sockaddr_in serverAddress;
-    if(fillAddress(serverAddress,"127.0.0.1",6767) == 1) {
+    if(fillAddress(serverAddress,NULL,6767) == 1) {
         return 1;
     }
     if(bind(serverFd,(struct sockaddr*) &serverAddress, sizeof(serverAddress)) < 0){
